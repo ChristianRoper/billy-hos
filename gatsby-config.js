@@ -1,5 +1,3 @@
-require("dotenv").config({ path: "./.env" })
-
 module.exports = {
   siteMetadata: {
     title: `Billy Ho's Pub & Eatery`,
