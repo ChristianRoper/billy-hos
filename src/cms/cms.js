@@ -1,7 +1,4 @@
-require("dotenv").config({ path: "./.env" })
-
 import CMS from "netlify-cms-app"
-import cloudinary from "netlify-cms-media-library-cloudinary"
 
 import { pages } from "./collections/pages"
 import { posts } from "./collections/posts"
@@ -24,8 +21,6 @@ CMS.registerPreviewTemplate("index", PagePreview)
 CMS.registerPreviewTemplate("about", PagePreview)
 CMS.registerPreviewTemplate("contact", PagePreview)
 CMS.registerPreviewTemplate("menu-page", PagePreview)
-
-CMS.registerMediaLibrary(cloudinary)
 
 CMS.init({
   load_config_file: false,
